@@ -9,3 +9,6 @@ deploy:
     tags: true
     all_branches: true
     repo: Bazai/travis-deploy-source
+env:
+  global:
+    secure: ZsAL+hUSpzWHQ8z8llrlEp48pPQN9o4Dbr/2DZkxfyYWs8GOiB2JRqcq0Spd/9TF3vjLTvwMw9Q2sfvu7PFD8VOWB9fInTydFWHRMR0QiEtuc+8DDjSJe2XNXdj+zG5UYCUCOYH/AzNHvb8L//5/0pwta4V9U+J5m//hwhdBpvg=
