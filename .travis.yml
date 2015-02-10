@@ -11,4 +11,4 @@ deploy:
     repo: Bazai/travis-deploy-source
 
 script:
-- 'echo hi'
+- 'echo "hi"'
