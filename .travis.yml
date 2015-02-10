@@ -1,3 +1,5 @@
+language: node_js
+node_js: '0.10'
 deploy:
   provider: releases
   api_key: d20415868e3e894866fe208b5a32c99ed6ff4981
