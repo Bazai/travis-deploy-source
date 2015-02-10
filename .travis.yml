@@ -1,0 +1,9 @@
+deploy:
+  provider: releases
+  api_key: d20415868e3e894866fe208b5a32c99ed6ff4981
+  file: file.md
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+    repo: Bazai/travis-deploy-source
