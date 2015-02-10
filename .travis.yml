@@ -1,14 +1,11 @@
 language: node_js
 node_js: '0.10'
-deploy:
-  provider: releases
-  api_key: d20415868e3e894866fe208b5a32c99ed6ff4981
-  file: file.md
-  skip_cleanup: true
-  on:
-    tags: true
-    all_branches: true
-    repo: Bazai/travis-deploy-source
 env:
   global:
     secure: ZsAL+hUSpzWHQ8z8llrlEp48pPQN9o4Dbr/2DZkxfyYWs8GOiB2JRqcq0Spd/9TF3vjLTvwMw9Q2sfvu7PFD8VOWB9fInTydFWHRMR0QiEtuc+8DDjSJe2XNXdj+zG5UYCUCOYH/AzNHvb8L//5/0pwta4V9U+J5m//hwhdBpvg=
+deploy:
+  provider: releases
+  api_key: 5e603b4314aaa7918851f3e6e76af9233f34f47e
+  file: file.md
+  on:
+    repo: Bazai/travis-deploy-source
