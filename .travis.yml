@@ -9,3 +9,6 @@ deploy:
   file: file.md
   on:
     repo: Bazai/travis-deploy-source
+
+script:
+- 'echo hi'
