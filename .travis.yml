@@ -5,7 +5,7 @@ env:
     secure: ZsAL+hUSpzWHQ8z8llrlEp48pPQN9o4Dbr/2DZkxfyYWs8GOiB2JRqcq0Spd/9TF3vjLTvwMw9Q2sfvu7PFD8VOWB9fInTydFWHRMR0QiEtuc+8DDjSJe2XNXdj+zG5UYCUCOYH/AzNHvb8L//5/0pwta4V9U+J5m//hwhdBpvg=
 deploy:
   provider: releases
-  api_key: 5e603b4314aaa7918851f3e6e76af9233f34f47e
+  api_key: fd783d1e041f014fe601ba49120f5bce8e3d51f7
   file: file.md
   on:
     repo: Bazai/travis-deploy-source
