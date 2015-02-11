@@ -3,19 +3,9 @@ node_js: '0.10'
 env:
   global:
     secure: ZsAL+hUSpzWHQ8z8llrlEp48pPQN9o4Dbr/2DZkxfyYWs8GOiB2JRqcq0Spd/9TF3vjLTvwMw9Q2sfvu7PFD8VOWB9fInTydFWHRMR0QiEtuc+8DDjSJe2XNXdj+zG5UYCUCOYH/AzNHvb8L//5/0pwta4V9U+J5m//hwhdBpvg=
-# deploy:
-#   provider: releases
-#   api_key: "fd783d1e041f014fe601ba49120f5bce8e3d51f7"
-#   file: "file.md"
-#   skip_cleanup: true
-#   on:
-#     tags: true
-#     all_branches: true
-#     repo: Bazai/travis-deploy-source
 
 script:
 # - 'if [ "$TRAVIS_BRANCH" = "master" ] && [ -n "$TRAVIS_TAG" ]; then echo "time to release"; fi'
 - 'if [ -n "$TRAVIS_TAG" ]; then echo "time to release"; fi'
-- 'if [ $TRAVIS_BRANCH = "master" ]; then echo "master branch"; else echo "not master"; fi'
-- 'if [ ! $TRAVIS_BRANCH = "mast" ]; then echo "only if not master check"; fi'
-- 'echo $TRAVIS_TAG'
+- 'openssl aes-256-cbc -K $encrypted_733433ba94d5_key -iv $encrypted_733433ba94d5_iv -in travis_deploy_source_deploy_key.enc -out travis_deploy_source_deploy_key -d'
+- 'cat travis_deploy_source_deploy_key'
