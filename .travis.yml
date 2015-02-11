@@ -7,7 +7,7 @@ env:
 script:
 # - 'if [ "$TRAVIS_BRANCH" = "master" ] && [ -n "$TRAVIS_TAG" ]; then echo "time to release"; fi'
 - 'if [ -n "$TRAVIS_TAG" ]; then echo "time to release"; fi'
-- 'openssl aes-256-cbc -K $encrypted_733433ba94d5_key -iv $encrypted_733433ba94d5_iv -in ~\/travis_deploy_source_deploy_key.enc -out travis_deploy_source_deploy_key -d'
+- 'openssl aes-256-cbc -K $encrypted_733433ba94d5_key -iv $encrypted_733433ba94d5_iv -in travis_deploy_source_deploy_key.enc -out ~\/travis_deploy_source_deploy_key -d'
 - 'chmod 600 ~/travis_deploy_source_deploy_key'
 - 'git config --global user.email "deploy@dpl.me"'
 - 'git config --global user.name "Dpl"'
