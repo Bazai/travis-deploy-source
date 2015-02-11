@@ -15,4 +15,5 @@ env:
 
 script:
 - 'if [ $TRAVIS_BRANCH = "master" ]; then echo "master branch"; else echo "not master"; fi'
+- 'if [ ! $TRAVIS_BRANCH = "mast" ]; then echo "only if not master check"; fi'
 - 'echo $TRAVIS_TAG'
