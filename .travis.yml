@@ -16,7 +16,7 @@ script:
 - 'git init'
 - 'git remote add origin git@github.com:Bazai/travis-deploy-destination.git'
 - 'touch .test'
-- 'cp file.md .'
+- 'cp ../file.md .'
 - 'git add -A'
 - 'git commit -m "Travis deploy"'
 - 'git push -f origin master'
