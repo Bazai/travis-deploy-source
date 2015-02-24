@@ -130,7 +130,7 @@ clone
 # 3. Build files for Bower
 build
 
-# 4. Copy builded files to Bower repo
+# 4. Copy built files to Bower repo
 copy
 
 # 5. Commit and push new bower files to github
