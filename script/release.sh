@@ -21,12 +21,13 @@ git_config_name="Travis CI Deployer"
 base_github_repo="Bazai/travis-deploy-source"
 bower_github_repo="Bazai/travis-deploy-destination"
 
-# |||   DO NOT TOUCH. Auto split github strings on '/' to get repo name
-# eg. Bazai/travis-deploy-source -> travis-deploy-source
-#     Bazai/travis-deploy-desination -> travis-deploy-desination
+# ↓↓↓   DO NOT TOUCH.
+# ↓↓↓          Auto splitting github strings on '/' to get repo name
+# ↓↓↓          eg. Bazai/travis-deploy-source -> travis-deploy-source
+# ↓↓↓              Bazai/travis-deploy-desination -> travis-deploy-desination
 base_repo_name="${base_github_repo##*/}"
 bower_repo_name="${bower_github_repo##*/}"
-# |||   END of DO NOT TOUCH
+# ↑↑↑   END of DO NOT TOUCH
 
 encoded_deploy_key_location="script/travis_deploy_source_deploy_key.enc"
 deploy_enc_key="${encrypted_733433ba94d5_key}"
